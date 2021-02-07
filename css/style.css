@@ -8,6 +8,12 @@ main{
     margin:0 auto;
     background-color:#EDD263;
     padding:15px 20px;
+    min-height:100vh;
+}
+main::after{
+    content: "";
+    clear: both;
+    display:block;
 }
 a{
     text-decoration:none;
@@ -43,4 +49,20 @@ a{
     color:white;
     padding:12px 20px;
     cursor: pointer;
+}
+.single-meal{
+    width:21%;
+    float: left;
+    background-color:#ececec;
+    margin:1%;
+    padding:10px;
+    border-radius:10px;
+    cursor: pointer;
+}
+.single-meal h3{
+    text-align: center;
+    padding:5px 0;
+}
+.single-meal img{
+    width:100%;
 }
