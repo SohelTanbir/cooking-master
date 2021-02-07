@@ -10,6 +10,9 @@ main{
     padding:15px 20px;
     min-height:100vh;
 }
+img{
+    max-width:100%;
+}
 main::after{
     content: "";
     clear: both;
@@ -29,7 +32,7 @@ a{
     margin-left:25px;
     font-size:18px;
 }
-.header-content, ul{
+.header-content,.header-content ul{
     display:flex;
     justify-content:space-between;
 }
@@ -65,4 +68,22 @@ a{
 }
 .single-meal img{
     width:100%;
+}
+/*single product information*/
+#product-ingredient{
+    width:60%;
+    margin:0 auto;
+}
+#product-ingredient h3{
+    padding:10px 0;
+    text-align: center;
+}
+#product-ingredient img{
+    width:600px;
+    height:300px;
+    border-radius:20px;
+}
+#product-ingredient ul{
+    padding:10px;
+    margin-left:20px;
 }

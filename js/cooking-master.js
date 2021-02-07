@@ -22,16 +22,32 @@ document.getElementById('searchBtn').addEventListener('click', function () {
                 mealContainer.appendChild(div);
                 document.getElementById('mealName').value = '';
 
+                // show single meal info
+                div.addEventListener("click", function () {
+                    const ingredient = document.getElementById('product-ingredient');
+                    const ul = document.getElementById('ul');
+                    const li = document.createElement('li');
+                    const singleProductInfo = `
+                    <img src="${meals.strMealThumb}">
+                    <h3>Name: ${meals.strMeal}</h3>
+                    <hr>
+                    <ul>
+                        <li>${meals.strIngredient1}</li>
+                        <li>${meals.strIngredient2}</li>
+                        <li>${meals.strIngredient3}</li>
+                        <li>${meals.strIngredient4}</li>
+                        <li>${meals.strIngredient5}</li>
+                        <li>${meals.strIngredient6}</li>
+                        <li>${meals.strIngredient7}</li>
+                        <li>${meals.strIngredient8}</li>
+                    </ul>
+                    `
+                    ingredient.innerHTML = singleProductInfo;
+                })
+
             });
         }
     } else {
         alert('Please Enter meal name');
     }
-
-
-
-
-})
-
-
-
+});
